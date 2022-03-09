@@ -1,12 +1,9 @@
 abstract class Graphics {
-
+    void moveTo(float xx, float yy) {};
+    void draw() {};
+    void erase() {};
 }
-interface Action {
-    void moveTo(float x, float y);
-    void draw();
-    void erase();
-}
-class Point extends Graphics implements Action {
+class Point extends Graphics {
     protected float x;
     protected float y;
 
