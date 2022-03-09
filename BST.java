@@ -6,7 +6,6 @@ class BST { //Binary Search Tree
     public int getValue() {
         return this.value;
     }
-    public BST
 
     public BST find(int key) { //return a BST with root value = key
         if(this.getValue() == null) return null;
