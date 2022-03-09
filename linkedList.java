@@ -37,7 +37,7 @@ public class LinkedList {
     }
 
     public LinkedList push_back(int value) {
-
+        
     }
 
     public getLength() {
@@ -54,7 +54,7 @@ public class LinkedList {
         LinkedList newLL = new LinkedList(this);
         newLL.push_back(value);
         int key = -1;
-        while(newLL.value != value) {
+        while(newLL.getValue() != value) {
             key++;
             newLL = new LinkedList(newll.getNext());
         }
