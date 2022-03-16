@@ -20,13 +20,13 @@ public class Person {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
     public String getGender() {
-        return this.gender;
+        return gender;
     }
     public MyDate getBirthday() {
-        return new MyDate(this.birthday);
+        return new MyDate(birthday);
     }
 
 
@@ -41,6 +41,6 @@ public class Person {
     }
 
     public String toString() {
-        return this.getName + ", " + this.getGender;
+        return this.getName + ", " + this.getGender();
     }
 }
