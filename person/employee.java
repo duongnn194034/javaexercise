@@ -8,10 +8,10 @@ class Employee extends Person {
     }
 
     public int getSalary() {
-        return this.salary;
+        return salary;
     }
 
     public toString() {
-        return super.toString() + ", " + this.getSalary + "$ salary."; 
+        return super.toString() + ", " + this.getSalary() + "$ salary."; 
     }
 }
