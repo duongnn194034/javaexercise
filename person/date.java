@@ -17,13 +17,13 @@ public class MyDate {
     }
 
     public int getDay() {
-        return this.day;
+        return day;
     }
     public int getMonth() {
-        return this.month;
+        return month;
     }
     public int getYear() {
-        return this.year;
+        return year;
     }
 
     public void setDay(int day) {
