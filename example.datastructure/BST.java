@@ -4,13 +4,13 @@ class BST { //Binary Search Tree
     private BST rightChild;
 
     public int getValue() {
-        return this.value;
+        return value;
     }
     public BST getLeftChild() {
+        return new BST(leftChild);
     
     public BST getRightChild() {
-          return new BST(this.leftChild);
-    }  return new BST(this.rightChild);
+        return new BST(rightChild);
     }
     public BST(BST bst) {
         this.value = bst.getValue;
