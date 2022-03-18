@@ -15,29 +15,33 @@ public class LinkedList {
     }
     
     public int getValue() {
-        return this.value;
+        return value;
     }
     public LinkedList getNext () {
-        return this.next;
+        return new LinkedList(next);
     }
 
     public void setValue (int value) {
         this.value = value;
     }
 
-    public void setNext (LinkedList ll) {
-        this.next = new LinkedList(ll);
+    public void setNext (LinkedList list) {
+        this.next = new LinkedList(list);
     }
     
     public LinkedList push_front(int value) {
         LinkedList newLList = new LinkedList();
         newLList.setValue(value);
         newLList.setNext(this);
-        return newLList;
+        return new LinkedList(newLList);
     }
 
     public LinkedList push_back(int value) {
-        
+        LinkedList list = new LinkedList(this);
+        while(list.getValue() != null)
+            list = list.getNext();
+        list.setValue(value);
+        return this;
     }
 
     public getLength() {
@@ -62,5 +66,13 @@ public class LinkedList {
         else return key;
     }
 
-    public remove(int val)
+    public LinkedList remove(int value) {
+        LinkedList list = new LinkedList(this);
+        if(list.find(value) == -1) return this;
+        if(list.getValue() = val) return list.getNext();
+        while(list.getNext().getValue() == value)
+            list = list.getNext();
+        list.setNext(list.getNext().getNext());
+        return this;
+    }
 }
