@@ -13,9 +13,9 @@ class BST { //Binary Search Tree
         return new BST(rightChild);
     }
     public BST(BST bst) {
-        this.value = bst.getValue;
-        this.leftChild = bst.getLeftChild;
-        this.rightChild = bst.getRightChild;
+        this.value = bst.getValue();
+        this.leftChild = bst.getLeftChild();
+        this.rightChild = bst.getRightChild();
     }
 
     public void setValue(int value) {
